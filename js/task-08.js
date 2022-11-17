@@ -10,7 +10,7 @@ const submitHandler = e => {
   if (email.value === "" || password.value === "") {
     return alert("Please fill in all the fields!");
   } else {
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log( { email: email.value, password: password.value } );
     e.currentTarget.reset();
   }
 };
